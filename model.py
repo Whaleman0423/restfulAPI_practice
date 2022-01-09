@@ -36,3 +36,11 @@ class Post(object):
             "body": self.body
         }
         return demo_dict
+
+     def __repr__(self):
+        return (f'''Post(
+            userId={self.userId},
+            post_id={self.id},
+            title={self.title},
+            body={self.body}
+        )''')
